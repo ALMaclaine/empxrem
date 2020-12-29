@@ -6,26 +6,26 @@ export function pxToEm(px: number, baseFontSize: number = 16) {
     return `${px / baseFontSize}em`;
 }
 
-export function ensureNotPx(unit: number | string) {
+export function ensureNotPx(unit: number | string, baseFontSize: number) {
     if (typeof unit === 'string') {
         if (unit.includes('px')) {
             const val = parseFloat(unit.replace('px', ''));
-            unit = pxToRem(val);
+            unit = pxToRem(val, baseFontSize);
         }
     } else {
-        unit = pxToRem(unit);
+        unit = pxToRem(unit, baseFontSize);
     }
     return unit;
 }
 
-export function ensureNotPxEm(unit: number | string) {
+export function ensureNotPxEm(unit: number | string, baseFontSize: number) {
     if (typeof unit === 'string') {
         if (unit.includes('px')) {
             const val = parseFloat(unit.replace('px', ''));
-            unit = pxToRem(val);
+            unit = pxToEm(val, baseFontSize);
         }
     } else {
-        unit = pxToEm(unit);
+        unit = pxToEm(unit, baseFontSize);
     }
     return unit;
 }
