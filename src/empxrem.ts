@@ -1,12 +1,12 @@
-export function pxToRem(px: number, baseFontSize: number | string = 16) {
+export function pxToRem(px: number, baseFontSize: number = 16) {
     return `${px / baseFontSize}rem`;
 }
 
-export function pxToEm(px: number, baseFontSize: number | string = 16) {
+export function pxToEm(px: number, baseFontSize: number = 16) {
     return `${px / baseFontSize}em`;
 }
 
-export function ensureNotPx(unit: number | string, baseFontSize: number | string) {
+export function ensureNotPx(unit: number | string, baseFontSize: number) {
     if (typeof unit === 'string') {
         if (unit.includes('px')) {
             const val = parseFloat(unit.replace('px', ''));
@@ -16,9 +16,9 @@ export function ensureNotPx(unit: number | string, baseFontSize: number | string
         unit = pxToRem(unit, baseFontSize);
     }
     return unit;
-}
+}z
 
-export function ensureNotPxEm(unit: number | string, baseFontSize: number | string) {
+export function ensureNotPxEm(unit: number | string, baseFontSize: number) {
     if (typeof unit === 'string') {
         if (unit.includes('px')) {
             const val = parseFloat(unit.replace('px', ''));
