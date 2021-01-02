@@ -4,7 +4,7 @@ exports[`empxrem Has Correct API 1`] = `
 Array [
   "pxToRem",
   "pxToEm",
-  "ensureNotPx",
+  "ensureNotPxRem",
   "ensureNotPxEm",
 ]
 `;
