@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ec70bd1-1097-486a-b104-af9164461816" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/empxrem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/empxrem.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/__snapshots__/empxrem.test.ts.snap" beforeDir="false" afterPath="$PROJECT_DIR$/tests/__snapshots__/empxrem.test.ts.snap" afterDir="false" />
-    </list>
+    <list default="true" id="4ec70bd1-1097-486a-b104-af9164461816" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +31,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609554860670</updated>
-      <workItem from="1609554861795" duration="345000" />
+      <workItem from="1609554861795" duration="519000" />
     </task>
     <servers />
   </component>
