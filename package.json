@@ -1,6 +1,6 @@
 {
   "name": "empxrem",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Library for converting px to em and rem.",
   "main": "dist/index.bundle.js",
   "module": "dist/index.js",
