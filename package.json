@@ -8,6 +8,7 @@
   "scripts": {
     "test": "npx jest",
     "clean": "npx rimraf dist",
+    "lint": "npx eslint . --fix",
     "rollup": "rollup -c ./rollup.config.js",
     "build": "npm run test && npm run clean && npm run compile && npm run rollup",
     "compile": "tsc --outDir dist --project tsconfig.build.json",
