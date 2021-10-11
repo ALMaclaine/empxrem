@@ -12,25 +12,27 @@ export function pxToEm(px: number, baseFontSize = 16): string {
 }
 
 export function ensureNotPxRem(unit: number | string, baseFontSize: number): string {
+    let out = '';
     if (typeof unit === 'string') {
         if (unit.includes('px')) {
             const val = parseFloat(unit.replace('px', ''));
-            unit = pxToRem(val, baseFontSize);
+            out = pxToRem(val, baseFontSize);
         }
     } else {
-        unit = pxToRem(unit, baseFontSize);
+        out = pxToRem(unit, baseFontSize);
     }
-    return unit;
+    return out;
 }
 
 export function ensureNotPxEm(unit: number | string, baseFontSize: number): string {
+    let out = '';
     if (typeof unit === 'string') {
         if (unit.includes('px')) {
             const val = parseFloat(unit.replace('px', ''));
-            unit = pxToEm(val, baseFontSize);
+            out = pxToEm(val, baseFontSize);
         }
     } else {
-        unit = pxToEm(unit, baseFontSize);
+        out = pxToEm(unit, baseFontSize);
     }
-    return unit;
+    return out;
 }
