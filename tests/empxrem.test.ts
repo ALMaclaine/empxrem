@@ -33,6 +33,10 @@ describe('empxrem', () => {
         expect(npmUtils.ensureNotPxRem('16px')).toBe("1.0000rem");
         expect(npmUtils.ensureNotPxRem('10px', 10)).toBe("1.0000rem");
         expect(npmUtils.ensureNotPxRem('10px')).toBe("0.6250rem");
+
+        expect(npmUtils.ensureNotPxRem('16')).toBe("1.0000rem");
+        expect(npmUtils.ensureNotPxRem('10', 10)).toBe("1.0000rem");
+        expect(npmUtils.ensureNotPxRem('10')).toBe("0.6250rem");
     });
 
     it('ensureNotPxEm converts correctly', () => {
@@ -43,5 +47,9 @@ describe('empxrem', () => {
         expect(npmUtils.ensureNotPxEm('16px')).toBe("1.0000em");
         expect(npmUtils.ensureNotPxEm('10px', 10)).toBe("1.0000em");
         expect(npmUtils.ensureNotPxEm('10px')).toBe("0.6250em");
+
+        expect(npmUtils.ensureNotPxEm('16')).toBe("1.0000em");
+        expect(npmUtils.ensureNotPxEm('10', 10)).toBe("1.0000em");
+        expect(npmUtils.ensureNotPxEm('10')).toBe("0.6250em");
     });
 });
