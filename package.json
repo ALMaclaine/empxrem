@@ -7,6 +7,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "npx jest",
+    "test:update": "npx jest -u",
     "clean": "npx rimraf dist",
     "lint": "npx eslint . --fix",
     "rollup": "rollup -c ./rollup.config.js",

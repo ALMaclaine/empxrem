@@ -2,6 +2,7 @@
 
 exports[`empxrem Has Correct API 1`] = `
 Array [
+  "scaleValue",
   "pxToRem",
   "pxToEm",
   "ensureNotPxRem",

@@ -1,17 +1,17 @@
-function pxToRelative(px: number, baseFontSize = 16) {
-    const size = px / baseFontSize;
+export function scaleValue(val: number, scaleBase: number = 16) {
+    const size = val / scaleBase;
     return size.toFixed(4);
 }
 
 export function pxToRem(px: number, baseFontSize = 16): string {
-    return `${pxToRelative(px, baseFontSize)}rem`;
+    return `${scaleValue(px, baseFontSize)}rem`;
 }
 
 export function pxToEm(px: number, baseFontSize = 16): string {
-    return `${pxToRelative(px, baseFontSize)}em`;
+    return `${scaleValue(px, baseFontSize)}em`;
 }
 
-export function ensureNotPxRem(unit: number | string, baseFontSize: number): string {
+export function ensureNotPxRem(unit: number | string, baseFontSize: number = 16): string {
     let out = '';
     if (typeof unit === 'string') {
         if (unit.includes('px')) {
@@ -24,7 +24,7 @@ export function ensureNotPxRem(unit: number | string, baseFontSize: number): str
     return out;
 }
 
-export function ensureNotPxEm(unit: number | string, baseFontSize: number): string {
+export function ensureNotPxEm(unit: number | string, baseFontSize: number = 16): string {
     let out = '';
     if (typeof unit === 'string') {
         if (unit.includes('px')) {
