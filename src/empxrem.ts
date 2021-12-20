@@ -1,19 +1,20 @@
-export function scaleValue(val: number, scaleBase: number = 16) {
+export function scaleValue(val: number, scaleBase = 16) {
     const size = val / scaleBase;
     return size.toFixed(4);
 }
 
-export function pxToRem(px: number, baseFontSize: number = 16): string {
+export function pxToRem(px: number, baseFontSize = 16): string {
     return `${scaleValue(px, baseFontSize)}rem`;
 }
 
-export function pxToEm(px: number, baseFontSize: number = 16): string {
+export function pxToEm(px: number, baseFontSize = 16): string {
     return `${scaleValue(px, baseFontSize)}em`;
 }
 
 function ensureNot(
     unit: number | string,
-    baseFontSize: number = 16,
+    baseFontSize = 16,
+    // eslint-disable-next-line no-unused-vars
     convert: (px: number, baseFontSize: number) => string) {
     let val: number;
     if (typeof unit === 'string') {
@@ -29,10 +30,10 @@ function ensureNot(
 }
 
 
-export function ensureNotPxRem(unit: number | string, baseFontSize: number = 16): string {
+export function ensureNotPxRem(unit: number | string, baseFontSize = 16): string {
     return ensureNot(unit, baseFontSize, pxToRem);
 }
 
-export function ensureNotPxEm(unit: number | string, baseFontSize: number = 16): string {
+export function ensureNotPxEm(unit: number | string, baseFontSize = 16): string {
     return ensureNot(unit, baseFontSize, pxToEm);
 }
