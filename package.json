@@ -1,6 +1,6 @@
 {
   "name": "empxrem",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Library for converting px to em and rem.",
   "main": "dist/index.bundle.js",
   "module": "dist/index.js",
@@ -39,7 +39,7 @@
     "@almaclaine/eslint-config": "^0.0.20",
     "@almaclaine/jest-config": "^0.0.3",
     "@almaclaine/npm-scripts": "^0.0.15",
-    "@almaclaine/rollup-config": "^0.0.17",
+    "@almaclaine/rollup-config": "^0.0.18",
     "@almaclaine/ts-config": "^0.2.12"
   }
 }
