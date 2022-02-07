@@ -6,6 +6,7 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "start": "node npm_scripts/run_start.mjs",
     "test": "node npm_scripts/run_test.mjs",
     "test:update": "node npm_scripts/run_test.mjs update",
     "clean": "node npm_scripts/run_clean.mjs",
@@ -13,7 +14,8 @@
     "rollup": "node npm_scripts/run_rollup.mjs",
     "build": "node npm_scripts/run_build.mjs",
     "compile": "node npm_scripts/run_compile.mjs",
-    "prepublishOnly": "node npm_scripts/run_prepublish.mjs"
+    "prepublishOnly": "node npm_scripts/run_prepublish.mjs",
+    "blox": "npx gitblox"
   },
   "repository": {
     "type": "git",
